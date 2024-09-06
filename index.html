@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faq</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <section>
+        <h2 class="title">FAQs</h2>
+
+        <div class="faq">
+            <div class="question">
+                <h3>What is Javascript</h3>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path>
+                </svg>
+            </div>
+            <div class="answer">
+                <P>Javascrpt is often abbriavted as js, is a programming language that conforms the ECMAscript specification. Javascriot is highlevel, often just in time compiled and multi paradigm</P>
+            </div>
+            
+        </div>
+
+
+        <div class="faq">
+            <div class="question">
+                <h3>What is HTML</h3>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path>
+                </svg>
+            </div>
+            <div class="answer">
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis iure dicta ipsum culpa, explicabo non illum rem! Deleniti, vero at? Commodi aspernatur deserunt beatae officia facilis libero magnam porro ut.</P>
+            </div>
+            
+        </div>
+
+
+
+        <div class="faq">
+            <div class="question">
+                <h3>What is CSS</h3>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path>
+                </svg>
+            </div>
+            <div class="answer">
+                <P>Caseding style sheet is often abbriavted as CSS, is a programming language that gives styls to the webbsite and is used on the front end part of he website specification. </P>
+            </div>
+            
+        </div>
+
+
+    </section>
+    <script>
+        const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach(faq => {
+    faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+    })
+})
+    </script>
+</body>
+</html>
